@@ -8,24 +8,25 @@
 # Sort the following Json keys and add them into a file.
 # Access the nested key marks of math from the data.
 
-# Student_data = {"name":"Alice", "age" : 13, "marks" : {"math" : 99,}}
+# Std_data = {"name":"Alice", "age" : 13, "marks" : {"math" : 99,}}
 
 import json ;
-Student_data = {"name":"Alice", "age" : 13, "marks" : {"math" : 99,}} ;
-print(type(Student_data));
+Std_data = {"name":"Alice", "age" : 13, "marks" : {"math" : 99,}} ;
+print(type(Std_data));
 
-data = json.dumps(Student_data);
-print (type(data));
+data = json.dumps(Std_data);
+print (type(data)); 
 print(data);
 
 jsonData = json.loads(data);
+print (type(jsonData)); 
 print(jsonData["age"])
 
-prettyData = json.dumps(Student_data, indent=4,separators=("," , '='));
+prettyData = json.dumps(Std_data, indent=4,separators=("," , '='));
 print(prettyData);
 
 f = open("Demo.json" , "w");
-writeDate = json.dumps(Student_data , indent=4, sort_keys=True);
+writeDate = json.dumps(Std_data , indent=4, sort_keys=True);
 f.write(writeDate);
 print("The Student Data has been written sucessfully.");
 
