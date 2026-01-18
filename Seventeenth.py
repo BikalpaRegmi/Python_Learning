@@ -33,3 +33,4 @@ print("\n\n", "Sum of duplicated values in a column-:");
 print(data.duplicated("ID").sum());
 print("\n\n", "After Removing duplicated values in ID column-:");
 print(data.drop_duplicates("ID"));
+
