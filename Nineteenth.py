@@ -20,3 +20,9 @@ print("\n\n\n");
 data["FinalStatus"] = data["Passed"].astype(str) + " (" + data["Status"] + ")" ;
 data.drop(columns=["Passed", "Status"], inplace=True)
 print(data);
+
+print("\n\n\n");
+
+# Wap to add a new Column that gives the GPA depending on the score. After getting gpa, Remove the brackets in FinalStatus.
+data["GPA"] = data["Score"]/25;
+print(data); 
