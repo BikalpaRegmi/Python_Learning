@@ -29,15 +29,13 @@ data = pd.read_excel("C:/Users/user/OneDrive - Hetauda School of Management and 
 plt.hist(data["Score"],bins=10,color="pink",edgecolor="grey");
 plt.show();
 
+
 """
 WAP to perform violin plotting of salary and ethnicity in ESD excel file.
 """
 data = pd.read_excel("C:/Users/user/OneDrive - Hetauda School of Management and Social Sciences/Desktop/Data Analysis/Pandas Practice Excel/ESD.xlsx")
-
 groups = [group["Annual Salary"].values for name, group in data.groupby("Ethnicity")];
-
 labels = data["Ethnicity"].unique();
-
 plt.violinplot(groups);
 plt.xticks(range(1, len(labels) + 1), labels);
 plt.xlabel("Ethnicity");

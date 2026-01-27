@@ -1,4 +1,4 @@
-################ PyChart Plotting ##################
+################ PieChart Plotting ##################
 import pandas as pd;
 import matplotlib.pyplot as plt;
 
