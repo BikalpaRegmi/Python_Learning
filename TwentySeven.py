@@ -10,6 +10,7 @@ no_of_std=[60,40,35,55,23];
 color = ["Red","Green","Blue","Black","Purple"];
 exp = [0.1,0,0,0,0];
 plt.pie(no_of_std,labels=sub,colors=color,explode=exp,autopct="%.2f",shadow=True);
+plt.savefig("Piechart.png");
 plt.show();
 
 
